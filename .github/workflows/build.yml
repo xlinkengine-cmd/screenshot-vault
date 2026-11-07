@@ -59,7 +59,7 @@ jobs:
 
       - name: Build release APK
         working-directory: app
-        run: flutter build apk --release
+        run: flutter build apk --release --no-shrink
 
       - name: Save APK as build artifact
         uses: actions/upload-artifact@v4
